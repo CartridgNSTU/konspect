@@ -1,9 +1,13 @@
-let S = 2000000 ;
-let p = 10 ; 
-let years = 5 ;
-//считаем дискриминант//
-let Pereplata = 2000000;
+let hide = true;
 
-Pereplata = (Pereplata/100*p)*years;
+function ShowImg(){
+ if (hide == true) {
+ 	document.getElementById('img').src = 'steed.jpg';
+ 	hide = false;
 
-console.log(`Pereplata = ${Pereplata}`)
+ }
+else {
+	document.getElementById('img').src = '';
+	hide = true;
+}	
+}
