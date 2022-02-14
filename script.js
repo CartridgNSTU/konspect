@@ -1,13 +1,10 @@
-let hide = true;
-
-function ShowImg(){
- if (hide == true) {
- 	document.getElementById('img').src = 'steed.jpg';
- 	hide = false;
-
- }
-else {
-	document.getElementById('img').src = '';
-	hide = true;
-}	
+function SayHello() {
+  	let i = 0;
+  	let div = document.getElementById("img");
+  	while (i < 10){
+  		let img = document.createElement('img')
+ 		img.src = 'steed.jpg'
+ 		div.appendChild(img)
+ 		i += 1;
+	}
 }
